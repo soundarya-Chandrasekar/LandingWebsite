@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="icon" type="image/png" href="Photos/pexels-benoit-vacherie-2148876930-32549676.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoptions</title>
+</head>
+
+<body>
+    <!-- ------------------Nav-bar Start------------------- -->
+    <header class="header" id="header">
+        <div class="nav-btn">
+            <label for="nav-check"> <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            </label>
+        </div>
+
+        <input type="checkbox" id="nav-check">
+
+        <nav class="navigation">
+            <div class="brand">
+                <label class="close" for="nav-check"><i class="fa fa-times fa-1x" aria-hidden="true"></i>
+                </label>
+                <h3 class="navi"><i class="fa fa-paw fa-1x" aria-hidden="true"></i></h3>
+                <h3 class="navi">Pawfect Home</h3>
+            </div>
+            <!-- <ul class="nav-items mt-4">
+                <li> <a href="#adoption" class="nav-link"> Adoption Journey </a></li>
+                <li> <a href="#about" class="nav-link" data-bs-dismiss="offcanvas"> About Us </a></li>
+                <li> <a href="#services" class="nav-link" data-bs-dismiss="offcanvas"> Our Services </a></li>
+                <li> <a href="#success" class="nav-link" data-bs-dismiss="offcanvas"> Our Success </a></li>
+                <li> <a href="#contact" class="nav-link" data-bs-dismiss="offcanvas"> Contact</a></li>
+            </ul> -->
+
+            <!-- Use inline js to close the navlist page -->
+            <ul class="nav-items mt-4">
+                <li><a href="#adoption" class="nav-link"
+                        onclick="document.getElementById('nav-check').checked = false;">Adoption Journey</a></li>
+                <li><a href="#about" class="nav-link"
+                        onclick="document.getElementById('nav-check').checked = false;">About Us</a></li>
+                <li><a href="#services" class="nav-link"
+                        onclick="document.getElementById('nav-check').checked = false;">Our Services</a></li>
+                <li><a href="#success" class="nav-link"
+                        onclick="document.getElementById('nav-check').checked = false;">Our Success</a></li>
+                <li><a href="#contact" class="nav-link"
+                        onclick="document.getElementById('nav-check').checked = false;">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- ------------------Nav-bar End------------------- -->
+        <!-- ------------------Header Start------------------- -->
+        <div class="banner">
+            <h2>This is your chance to save a life</h2>
+            <h1>Help Us</h1>
+            <h1>Help Them</h1>
+            <h3>Every day, countless animals are in need of rescue, nourishment, medical aid, shelter, and
+                rehabilitation. </h3>
+            <!-- <a href="#" class="btn">View More</a> -->
+        </div>
+    </header>
+    <!-- ------------------Header End------------------- -->
+
+
+
+    <!-- -------------------------Divider Start--------------- -->
+    <div class="divider">
+    </div>
+    <!-- -------------------------Divider End--------------- -->
+
+
+
+    <!-- ---------------------------Adoption Journery Start------------------------- -->
+    <section id="adoption">
+        <div class="container-fluid px-0"> <!-- Remove container padding -->
+            <div class="row g-0 text-center"> <!-- g-0 removes column gutters -->
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="work flex-fill">
+                        <span class="work-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#1f1f1f">
+                                <path
+                                    d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                            </svg>
+                        </span>
+                        <h4 class="work-title">Search</h4>
+                        <p class="work-body">Adopt a dog or cat who's right for you. Simply enter your city above to
+                            start
+                            your
+                            search.Adopt a dog or cat who's right for you. </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="work flex-fill">
+                        <span class="work-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#1f1f1f">
+                                <path
+                                    d="M200-640h560v-80H200v80Zm0 0v-80 80Zm0 560q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v227q-19-9-39-15t-41-9v-43H200v400h252q7 22 16.5 42T491-80H200Zm520 40q-83 0-141.5-58.5T520-240q0-83 58.5-141.5T720-440q83 0 141.5 58.5T920-240q0 83-58.5 141.5T720-40Zm67-105 28-28-75-75v-112h-40v128l87 87Z" />
+                            </svg>
+                        </span>
+                        <h4 class="work-title">Meet</h4>
+                        <p class="work-body">Once you find a pet, click "show number" to get contact info for their
+                            pet
+                            parent or rescue.
+                            Contact them to
+                            learn more about how to meet and adopt the pet.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="work flex-fill">
+                        <span class="work-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#1f1f1f">
+                                <path
+                                    d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
+                            </svg>
+                        </span>
+                        <h4 class="work-title">Adopt</h4>
+                        <p class="work-body">The rescue or pet parents will walk you through their adoption process.
+                            Prepare
+                            your home for
+                            the arrival of
+                            your fur baby to help them adjust to their new family.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 d-flex">
+                    <div class="work flex-fill">
+                        <span class="work-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#1f1f1f">
+                                <path
+                                    d="M420-340h120v-100h100v-120H540v-100H420v100H320v120h100v100Zm60 260q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q104-33 172-132t68-220v-189l-240-90-240 90v189q0 121 68 220t172 132Zm0-316Z" />
+                            </svg>
+                        </span>
+                        <h4 class="work-title">Vet Consultant</h4>
+                        <p class="work-body">ThePetNest will help your pet to settle down in its new home, once you
+                            complete
+                            the Adoption
+                            journey reach
+                            out to us for free vet consultation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------------Adoption Journery end------------------------- -->
+
+
+
+    <!-- ------------------------About Us Start---------------------------- -->
+    <section class="about" id="about">
+        <div class="section-center">
+            <div class="about-img">
+                <div class="about-pic-container">
+                    <img src="Photos/pexels-blue-bird-7210461.jpg" alt="TFC" class="about-pic">
+                </div>
+            </div>
+            <div class="about-info">
+                <div class="section-title">
+                    <h3>About Us</h3>
+                    <h2>Who We Are</h2>
+                </div>
+                <p class="about-body">
+                    We are nonprofit organization focused on the rescue, rehabilitation, and care of stray and
+                    abandoned
+                    animals. Since 2010, we have been creating a safe haven where every animal receives the love,
+                    respect, and medical care they deserve. </p>
+                <p class="about-body">We service provider—it’s a community that understands the deep bond between
+                    pets
+                    and
+                    their owners. The platform offers a seamless experience where pet parents can book grooming,
+                    boarding, sitting, training, and vet consultations from verified experts.
+                </p>
+                <!-- <a href="#" class="btn"></a> -->
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ------------------About Us End------------------ -->
+
+
+    <!-- ---------------Services Start--------------------- -->
+    <section class="services" id="services">
+        <div class="section-center clearfix">
+            <div class="services-info clearfix">
+                <div class="section-title">
+                    <h3>Check Out</h3>
+                    <h2>Our Services</h2>
+                </div>
+                <p class="services-text">Offers at-home pet grooming services to eliminate the hassle of taking your
+                    pet
+                    to a salon.Pet boarding while you travel, Every boarding facility and sitter is thoroughly
+                    verified,
+                    ensuring a safe and friendly stay for your furry companion.</p>
+                <p class="services-text">Pet parents can connect with
+                    experienced
+                    veterinarians from the comfort of their homes, getting immediate answers to their pet’s health
+                    concerns.Exercise is essential for a dog’s physical and mental well-being.Also offers
+                    professional
+                    pet training services, helping pets learn everything from basic obedience to advanced commands.
+                </p>
+            </div>
+
+            <div class="services-inventory clearfix">
+                <div class="service">
+                    <img src="Photos/pexels-valeriia-harbuz-2161259-12943750.jpg" alt="prd" class="services-img">
+                    <h4 class="services-title">Bathing and Grooming</h4>
+                    <h4 class="services-price">Starts from &#8377; 340</h4>
+                </div>
+                <div class="service">
+                    <img src="Photos/pexels-everton-nobrega-999186-2531766.jpg" alt="prd" class="services-img">
+                    <h4 class="services-title">Playing and Walking</h4>
+                    <h4 class="services-price">Starts from &#8377; 280</h4>
+                </div>
+                <div class="service">
+                    <img src="Photos/pexels-yaroslav-shuraev-9632599.jpg" alt="prd" class="services-img">
+                    <h4 class="services-title">Training</h4>
+                    <h4 class="services-price">Starts from &#8377; 800</h4>
+                </div>
+                <div class="service">
+                    <img src="Photos/pexels-cup-of-couple-8473654.jpg" alt="prd" class="services-img">
+                    <h4 class="services-title">Pet Boarding</h4>
+                    <h4 class="services-price">Starts from &#8377; 2000</h4>
+                </div>
+                <div class="service">
+                    <img src="Photos/pexels-christopher-welsch-leveroni-2150186467-32438131.jpg" alt="prd"
+                        class="services-img">
+                    <h4 class="services-title">Adoption</h4>
+                    <h4 class="services-price">Starts from &#8377; 5000</h4>
+                </div>
+                <div class="service">
+                    <img src="Photos/pexels-sam-lion-5732461.jpg" alt="prd" class="services-img">
+                    <h4 class="services-title">Vetnary Consultant</h4>
+                    <h4 class="services-price">Starts from &#8377; 1200</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------Services End------------------------ -->
+
+
+
+    <!-- ------------------Our Success start------------------- -->
+    <section class="we" id="success">
+        <div class="container my-4">
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="features text-center h-100">
+                        <div class="img-container">
+                            <img src="Photos/pexels-shkrabaanthony-5214995.jpg" alt="dog" style="width:200px"><br>
+                            <span class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                    viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                    <path
+                                        d="M420-340h120v-100h100v-120H540v-100H420v100H320v120h100v100Zm60 260q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q104-33 172-132t68-220v-189l-240-90-240 90v189q0 121 68 220t172 132Zm0-316Z" />
+                                </svg>
+                            </span>
+                        </div><br><br>
+                        <!-- <h4 class="feature-title">Who We Are</h4> -->
+                        <p class="feature-body">Provides reliable and compassionate dog adoption and pet care
+                            services,
+                            ensuring the well-being of every animal under their care. Their commitment to health,
+                            hygiene, and responsible pet ownership makes them a trusted choice for prospective pet
+                            parents.It has a key role in our successful adoptions and in building trust with every pet
+                            parent.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="features text-center h-100">
+                        <div class="img-container">
+                            <img src="Photos/pexels-shvetsa-5953769.jpg" alt="dog" style="width:200px"><br>
+                            <span class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                    viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                    <path
+                                        d="M380-80q-59 0-99.5-40.5T240-220q0-9 2.5-14t-.5-8q-3-3-8-.5t-14 2.5q-59 0-99.5-40.5T80-380q0-59 40.5-99.5T220-520q23 0 42 6t36 18l166-166q-12-17-18-36t-6-42q0-59 40.5-99.5T580-880q59 0 99.5 40.5T720-740q0 9-2.5 14t.5 8q3 3 8 .5t14-2.5q59 0 99.5 40.5T880-580q0 59-40.5 99.5T740-440q-23 0-42-6t-36-18L496-298q12 17 18 36t6 42q0 59-40.5 99.5T380-80Zm0-80q26 0 43-17t17-43q0-9-2.5-17.5T430-254q-17-24-14-51.5t24-48.5l166-166q21-21 48.5-24t51.5 14q8 5 16.5 7.5T740-520q26 0 43-17t17-43q0-26-17-43t-43-17q-35 0-49-3.5T662-662q-15-15-18.5-29t-3.5-49q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 11 2 18.5t8 15.5q17 24 14 51.5T520-606L354-440q-21 21-48.5 24T254-430q-8-5-16.5-7.5T220-440q-26 0-43 17t-17 43q0 26 17 43t43 17q35 0 49 3.5t29 18.5q15 15 18.5 29t3.5 49q0 26 17 43t43 17Zm100-320Z" />
+                                </svg>
+                            </span>
+                        </div><br><br>
+                        <!-- <h4 class="feature-title">Our primary mission</h4> -->
+                        <p class="feature-body"> Maintains high standards in animal nutrition by providing safe,
+                            hygienic, and vet-approved food for all dogs under their care. Their commitment to quality
+                            and regular food inspections ensures every adopted pet receives balanced and healthy
+                            meals.The nutritious, vet-approved food they provide plays a vital role in every pet’s
+                            recovery and long-term health.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="features text-center h-100">
+                        <div class="img-container">
+                            <img src="Photos/pexels-italo-melo-881954-2379004.jpg" alt="dog" style="width:200px"><br>
+                            <span class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                    viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                    <path
+                                        d="M640-440 474-602q-31-30-52.5-66.5T400-748q0-55 38.5-93.5T532-880q32 0 60 13.5t48 36.5q20-23 48-36.5t60-13.5q55 0 93.5 38.5T880-748q0 43-21 79.5T807-602L640-440Zm0-112 109-107q19-19 35-40.5t16-48.5q0-22-15-37t-37-15q-14 0-26.5 5.5T700-778l-60 72-60-72q-9-11-21.5-16.5T532-800q-22 0-37 15t-15 37q0 27 16 48.5t35 40.5l109 107ZM280-220l278 76 238-74q-5-9-14.5-15.5T760-240H558q-27 0-43-2t-33-8l-93-31 22-78 81 27q17 5 40 8t68 4q0-11-6.5-21T578-354l-234-86h-64v220ZM40-80v-440h304q7 0 14 1.5t13 3.5l235 87q33 12 53.5 42t20.5 66h80q50 0 85 33t35 87v40L560-60l-280-78v58H40Zm80-80h80v-280h-80v280Zm520-546Z" />
+                                </svg>
+                            </span>
+                        </div><br><br>
+                        <!-- <h4 class="feature-title">One Paw at a Time</h4> -->
+                        <p class="feature-body">I've always been impressed by Pawfect Home's dedication to feeding their
+                            dogs only safe, nutritious, and vet-inspected food. Their attention to quality gives me full
+                            confidence in the health of every adopted pet.Adopting a pet from them means welcoming a
+                            life that’s been truly nurtured with compassion. It's clear they genuinely care about animal
+                            well-being from the inside out.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="features text-center h-100">
+                        <div class="img-container">
+                            <img src="Photos/pexels-jibarofoto-4000092.jpg" alt="dog" style="width:200px"><br>
+                            <span class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                    viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                    <path
+                                        d="M194-80v-395h80v315h280v-193l105-105q29-29 45-65t16-77q0-40-16.5-76T659-741l-25-26-127 127H347l-43 43-57-56 67-67h160l160-160 82 82q40 40 62 90.5T800-600q0 57-22 107.5T716-402l-82 82v240H194Zm197-187L183-475q-11-11-17-26t-6-31q0-16 6-30.5t17-25.5l84-85 124 123q28 28 43.5 64.5T450-409q0 40-15 76.5T391-267Z" />
+                                </svg>
+                            </span>
+                        </div><br><br>
+                        <!-- <h4 class="feature-title">One Paw at a Time</h4> -->
+                        <p class="feature-body">We truly moved to see a speechless, suffering animal gradually heal and
+                            regain its spirit under the loving care of [Company Name]. Their dedication to treatment and
+                            recovery is nothing short of heartwarming. Adopting a pet from them means welcoming a life
+                            that’s been truly nurtured with compassion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------Our Success End------------------- -->
+
+    <!-- -------------------Contact Start------------------------- -->
+    <section class="contact" id="contact">
+        <div class="section-center clearfix">
+            <div class="contact-info container">
+                <div class="contact-item">
+                    <h5 class="contact-title"><span class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                <path
+                                    d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+                            </svg></span>
+                        Address
+                    </h5>
+                    <div class="contact-text">5/546, South Street,<br> RS Puram,<br> Coimbatore - 638056</div>
+                </div>
+                <div class="contact-item">
+                    <h5 class="contact-title"><span class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                <path
+                                    d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+                            </svg>
+                            E-mail
+                    </h5>
+                    <div class="contact-text">pawfecthome@gmail.com</div>
+                    <div class="contact-text">rakeshnambiyar@gmail.com</div>
+                </div>
+                <div class="contact-item">
+                    <h5 class="contact-title"><span class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                <path
+                                    d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+                            </svg>
+                            Call Us On
+                    </h5>
+                    <div class="contact-text">+91 8608677567</div>
+                    <div class="contact-text">044-233-456-234</div>
+                    <div class="contact-text">044-233-456-987</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ------------------Contact End---------------------------- -->
+    <!-- -----------------Footer Start---------------------------------------- -->
+    <footer class="footer">
+        <div class="social-media">
+            <div class="social-icon" title="@pawfect_home143">
+                <h5><a href="https://instagram.com" target="_blank">
+                        <i class="fab fa-instagram"></i> Follow Us On Instagram</h5>
+                </a>
+            </div>
+            <div class="social-icon" title="+91 8608776754">
+                <h5><i class="fab fa-whatsapp"></i> Chat Us on WhatsApp
+                    </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

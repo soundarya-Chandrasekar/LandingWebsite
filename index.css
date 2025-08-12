@@ -7,7 +7,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Margarine&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:ital,wght@0,100..900;1,100..900&family=Margarine&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap'); */
 
-
+ html {
+     color-scheme: light;
+ }
 
 /* body {
     /*background-image: url("Photos/pexels-daejeung-2827238.jpg");
